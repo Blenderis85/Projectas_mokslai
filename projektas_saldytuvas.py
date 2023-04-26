@@ -59,5 +59,5 @@ while True:
     # Meniu_pasirinkimas - 0 
     elif m_pasirinkimas == "0":
         os.system("cls")
-        print("-------" + "\x1b[33m" + "Gražios dienos!" + "\x1b[0m" + "-------")
+        print("-------" + "\x1b[33m" + " Gražios dienos! " + "\x1b[0m" + "-------")
         break
