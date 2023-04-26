@@ -41,4 +41,12 @@ while True:
         print("\n" + "Iveskite kieki: ")
         kiekis = input(">: ")
         produktai[produktas] = kiekis
+
+    # Meniu_pasirinkimas - 2 
+    elif m_pasirinkimas == "2":
+        os.system('cls')
+        print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai) + "\n")
+        print('Iveskite produkta: ')
+        produktas = input(">: ")
+        del produktai[produktas]
         break
