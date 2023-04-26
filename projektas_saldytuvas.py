@@ -44,9 +44,15 @@ while True:
 
     # Meniu_pasirinkimas - 2 
     elif m_pasirinkimas == "2":
-        os.system('cls')
+        os.system("cls")
         print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai) + "\n")
         print('Iveskite produkta: ')
         produktas = input(">: ")
         del produktai[produktas]
+
+    # Meniu pasirinkimas - 3 
+    elif m_pasirinkimas == "3":
+        os.system("cls")
+        print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai) + "\n")
+        input("Spauskite ENTER, kad grizti i MENIU")
         break
