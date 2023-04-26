@@ -18,7 +18,6 @@ while True:
       # Blue: \x1b[34m
       # Magenta: \x1b[35m
       # Cyan: \x1b[36m
-      # White: \x1b[37m
       # Grzina i pradine spalva: \x1b[0m 
 
     print("**** Programa saldytuvas ****\n")
@@ -50,9 +49,15 @@ while True:
         produktas = input(">: ")
         del produktai[produktas]
 
-    # Meniu pasirinkimas - 3 
+    # Meniu_pasirinkimas - 3 
     elif m_pasirinkimas == "3":
         os.system("cls")
         print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai) + "\n")
-        input("Spauskite ENTER, kad grizti i MENIU")
+        input("Spauskite " + "\x1b[35m" + "ENTER" + "\x1b[0m" + ", kad grizti i " 
+              + "\x1b[32m" + "MENIU " + "\x1b[0m")
+
+    # Meniu_pasirinkimas - 0 
+    elif m_pasirinkimas == "0":
+        os.system("cls")
+        print("-------" + "\x1b[33m" + "Gražios dienos!" + "\x1b[0m" + "-------")
         break
