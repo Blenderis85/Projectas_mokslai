@@ -21,8 +21,8 @@ while True:
       # White: \x1b[37m
       # Grzina i pradine spalva: \x1b[0m 
 
-    print("*** Programa saldytuvas ***\n")
-    print("\x1b[32m" + "   ----=== Meniu ===----" + "\x1b[0m")
+    print("**** Programa saldytuvas ****\n")
+    print("\x1b[32m" + "    ----=== Meniu ===----" + "\x1b[0m")
     print("\x1b[34m" + "1:" + "\x1b[0m" + " Prideti produktus i saldytuva")
     print("\x1b[34m" + "2:" + "\x1b[0m" + " Isimti produktus is saldytuvo")
     print("\x1b[34m" + "3:" + "\x1b[0m" + " Perziureti saldytuvo produktu sarasa" "\n")
@@ -35,7 +35,7 @@ while True:
     # Meniu_pasirinkimas - 1 
     if m_pasirinkimas == "1":
         os.system("cls")
-        print (f"Produktu sarasas: {produktai}" + "\n")
+        print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai) + "\n")
         print("Iveskite produkta: ")            
         produktas = input(">: ")
         print("\n" + "Iveskite kieki: ")
