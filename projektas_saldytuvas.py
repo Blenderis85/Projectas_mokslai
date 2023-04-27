@@ -44,17 +44,19 @@ while True:
            produktai_saldytuve[produktas] = kiekis
 
     # Meniu_pasirinkimas - 2
-    elif m_pasirinkimas == "2":
+    if m_pasirinkimas == "2":
         os.system("cls")
         print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai_saldytuve) + "\n")
         print("\x1b[31m" + "Isimti" + "\x1b[0m" + "\n")
         produktas = str(input("Produktas: "))
         kiekis = float(input("Kiekis: "))
-        
+
         if produktas in produktai_saldytuve:
            produktai_saldytuve[produktas] -= kiekis
+           if produktai_saldytuve[produktas] <= 0:
+                del produktai_saldytuve[produktas]
         else:
-           produktai_saldytuve[produktas] = kiekis    
+            print(f"\x1b[31m" + f"{produktas} nera sarase" + "\x1b[0m")
 
     # Meniu_pasirinkimas - 3 
     elif m_pasirinkimas == "3":
