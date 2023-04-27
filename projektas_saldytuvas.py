@@ -35,6 +35,7 @@ while True:
     if m_pasirinkimas == "1":
         os.system("cls")
         print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai_saldytuve) + "\n")
+        print("\x1b[32m" + "Ideti" + "\x1b[0m" + "\n")
         produktas = str(input("Produktas: "))
         kiekis = float(input("Kiekis: "))
         if produktas in produktai_saldytuve:
@@ -46,6 +47,7 @@ while True:
     elif m_pasirinkimas == "2":
         os.system("cls")
         print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai_saldytuve) + "\n")
+        print("\x1b[31m" + "Isimti" + "\x1b[0m" + "\n")
         produktas = str(input("Produktas: "))
         kiekis = float(input("Kiekis: "))
         
