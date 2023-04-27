@@ -2,7 +2,7 @@ import os
 
 os.system("cls")
 
-produktai = {}
+produktai_saldytuve = {}
 
 while True:
     os.system("cls")
@@ -34,30 +34,30 @@ while True:
     # Meniu_pasirinkimas - 1 
     if m_pasirinkimas == "1":
         os.system("cls")
-        print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai) + "\n")
+        print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai_saldytuve) + "\n")
         produktas = str(input("Produktas: "))
         kiekis = float(input("Kiekis: "))
-        if produktas in produktai:
-           produktai[produktas] += kiekis
+        if produktas in produktai_saldytuve:
+           produktai_saldytuve[produktas] += kiekis
         else:
-           produktai[produktas] = kiekis
+           produktai_saldytuve[produktas] = kiekis
 
     # Meniu_pasirinkimas - 2
     elif m_pasirinkimas == "2":
         os.system("cls")
-        print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai) + "\n")
+        print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai_saldytuve) + "\n")
         produktas = str(input("Produktas: "))
         kiekis = float(input("Kiekis: "))
         
-        if produktas in produktai:
-           produktai[produktas] -= kiekis
+        if produktas in produktai_saldytuve:
+           produktai_saldytuve[produktas] -= kiekis
         else:
-           produktai[produktas] = kiekis    
+           produktai_saldytuve[produktas] = kiekis    
 
     # Meniu_pasirinkimas - 3 
     elif m_pasirinkimas == "3":
         os.system("cls")
-        print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai) + "\n")
+        print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai_saldytuve) + "\n")
         input("Spauskite " + "\x1b[35m" + "ENTER" + "\x1b[0m" + " , kad grizti i " 
               + "\x1b[32m" + "MENIU " + "\x1b[0m")
 
