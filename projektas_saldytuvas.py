@@ -68,3 +68,5 @@ while True:
         os.system("cls")
         print("-------" + "\x1b[33m" + " Gražios dienos! " + "\x1b[0m" + "-------")
         break
+    
+    ## Nauja uzduotis: iterpti kilogramus, litrus, vienetus.
