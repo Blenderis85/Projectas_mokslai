@@ -35,25 +35,30 @@ while True:
     if m_pasirinkimas == "1":
         os.system("cls")
         print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai) + "\n")
-        print("Iveskite produkta: ")            
-        produktas = input(">: ")
-        print("\n" + "Iveskite kieki: ")
-        kiekis = input(">: ")
-        produktai[produktas] = kiekis
+        produktas = str(input("Produktas: "))
+        kiekis = float(input("Kiekis: "))
+        if produktas in produktai:
+           produktai[produktas] += kiekis
+        else:
+           produktai[produktas] = kiekis
 
-    # Meniu_pasirinkimas - 2 
+    # Meniu_pasirinkimas - 2
     elif m_pasirinkimas == "2":
         os.system("cls")
         print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai) + "\n")
-        print('Iveskite produkta: ')
-        produktas = input(">: ")
-        del produktai[produktas]
+        produktas = str(input("Produktas: "))
+        kiekis = float(input("Kiekis: "))
+        
+        if produktas in produktai:
+           produktai[produktas] -= kiekis
+        else:
+           produktai[produktas] = kiekis    
 
     # Meniu_pasirinkimas - 3 
     elif m_pasirinkimas == "3":
         os.system("cls")
         print(f"\x1b[36m" + "Produktu sarasas: " + "\x1b[0m" + str(produktai) + "\n")
-        input("Spauskite " + "\x1b[35m" + "ENTER" + "\x1b[0m" + ", kad grizti i " 
+        input("Spauskite " + "\x1b[35m" + "ENTER" + "\x1b[0m" + " , kad grizti i " 
               + "\x1b[32m" + "MENIU " + "\x1b[0m")
 
     # Meniu_pasirinkimas - 0 
