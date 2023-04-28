@@ -1,2 +1,4 @@
-mesa 4.0
-suris 2.5
+mesa 2.5
+desra 0.5
+suris 0.5
+pienas 2.0
