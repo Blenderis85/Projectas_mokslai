@@ -1,14 +1,15 @@
+import json
 import os
 
 os.system("cls")
 
 produktai_saldytuve = {}
+filename = 'code_data.json'
 
 try:
-    with open('saldytuvo_save.txt', 'r') as f:
+    with open('code_data.json', 'r') as f:
         for line in f:
-            produktas, kiekis = line.strip().split()
-            produktai_saldytuve[produktas] = float(kiekis)
+            produktai_saldytuve = json.loads(line)
 except FileNotFoundError:
     print("Klaida: nurodytas failas nebuvo rastas.")
 
@@ -67,7 +68,6 @@ while True:
         print("-------" + "\x1b[33m" + " Gražios dienos! " + "\x1b[0m" + "-------")
         break
 
-with open('saldytuvo_save.txt', 'w') as f:
-    for produktas_pavadinimas, kiekis in produktai_saldytuve.items():
-        f.write(f"{produktas_pavadinimas} {kiekis}\n")
+with open(filename, 'w') as f:
+    json.dump(produktai_saldytuve, f)
 f.close()
