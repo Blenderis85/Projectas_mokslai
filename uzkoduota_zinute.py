@@ -11,5 +11,5 @@ def encrypt_message(message, key):
             cipher = cipher + encrypt_char(c, key)
     return cipher
 
-encrypted_message = encrypt_message("you are awesome", 3)
+encrypted_message = encrypt_message("kestis kietas", 3)
 print(encrypted_message)

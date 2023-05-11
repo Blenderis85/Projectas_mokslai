@@ -10,5 +10,5 @@ def decrypt_message(cipher, key):
             message = message + decrypt_char(c, key)
     return message
 
-decrypted_message = decrypt_message('BRX DUH DZHVRPH', 3)
+decrypted_message = decrypt_message('NHVWLV NLHWDV', 3)
 print(decrypted_message)
