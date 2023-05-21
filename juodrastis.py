@@ -1,3 +1,1 @@
-name = input("What's your name? ")
-name = name.strip()
-print("Hello,", name)
+print("meow\n" * 3, end="")
